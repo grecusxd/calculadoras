@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDoList</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="conteudo">
+      <div class="topo">
+        <input
+          type="text"
+          id="inputNovaTarefa"
+          placeholder="Adicione uma tarefa"
+        />
+        <button id="addTarefa">
+          <i class="fa fa-plus"></i>
+        </button>
+      </div>
+
+      <ul id="listaTarefas"></ul>
+    </div>
+    <div id="janelaEdicao">
+      <button id="janelaEdicaoBtnFechar">
+        <li class="fa fa-remove"></li>
+      </button>
+      <h2 id="idTarefaEdicao">#1021</h2>
+      <hr />
+      <form>
+        <div class="frm-linha">
+          <label for="nome">Nome</label>
+          <input type="text" id="inputTarefaNomeEdicao" />
+        </div>
+        <div class="frm-linha">
+          <button id="btnAtualizarTarefa">Salvar</button>
+        </div>
+      </form>
+    </div>
+    <div id="janelaEdicaoFundo"></div>
+    <script src="./index.js"></script>
+  </body>
+</html>
